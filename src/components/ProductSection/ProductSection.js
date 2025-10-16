@@ -23,10 +23,10 @@ const ProductSection = ({ products, addToCartProduct }) => {
             </div>
             <div className="container">
                 <div className="section-title text-center">
-                    <h6>Digital printing Service</h6>
-                    <h2>Explore Features Product</h2>
+                    <h6>Your Design Starts Here</h6>
+                    <h3>Pick a 3D garment base, apply your design,<br/> and see it come alive instantly</h3>
                 </div>
-                <div className="product-header mt-4 mt-md-0">
+                {/* <div className="product-header mt-4 mt-md-0">
                     <ul className="nav">
                         <li className="nav-item" >
                             <button className={`nav-link ${activeTab === 'Tab1' ? 'active' : ''}`} onClick={() => openTab('Tab1')}>
@@ -49,13 +49,13 @@ const ProductSection = ({ products, addToCartProduct }) => {
                             </button>
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 <div className="tab-content">
-                    <div id="Tab1" style={{ display: activeTab === 'Tab1' ? 'block' : 'none' }} >
+                    {/* <div id="Tab1" style={{ display: activeTab === 'Tab1' ? 'block' : 'none' }} >
                         <div className="row">
                             {products.length > 0 &&
-                                products.slice(0, 8).map((product, pitem) => (
-                                    <div className="col-xl-3 col-lg-4 col-md-6" key={pitem}>
+                                products.slice(0, 9).map((product, pitem) => (
+                                    <div className="col-xl-4 col-lg-4 col-md-4" key={pitem}>
                                         <div className="product-box-items">
                                             <div className="product-image">
                                                 <img src={product.proImg} alt="img" />
@@ -93,35 +93,35 @@ const ProductSection = ({ products, addToCartProduct }) => {
                                     </div>
                                 ))}
                         </div>
-                    </div>
+                    </div> */}
                     <div id="Tab2" style={{ display: activeTab === 'Tab2' ? 'block' : 'none' }}>
                         <div className="row">
                             {products.length > 0 &&
-                                products.slice(0, 8).map((product, pitem) => (
-                                    <div className="col-xl-3 col-lg-4 col-md-6" key={pitem}>
+                                products.slice(0, 9).map((product, pitem) => (
+                                    <div className="col-xl-4 col-lg-4 col-md-4" key={pitem}>
                                         <div className="product-box-items">
                                             <div className="product-image">
                                                 <img src={product.proImg} alt="img" />
                                                 <ul className="product-icon d-grid align-items-center">
                                                     <li>
                                                         <button
-                                                            onClick={() => addToCartProduct(product)}><i className="fa-sharp fa-regular fa-eye"></i></button>
+                                                            onClick={() => addToCartProduct(product)}><i class="fa-thin fa-circle-info"></i></button>
                                                     </li>
-                                                    <li>
+                                                    {/* <li>
                                                         <a href="#">
                                                             <i className="fa-regular fa-star"></i>
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <Link onClick={ClickHandler} to={`/shop-details/${product.slug}`}><i className="fa-regular fa-arrow-up-arrow-down"></i></Link>
-                                                    </li>
+                                                    </li> */}
                                                 </ul>
                                                 <div className="shop-btn">
                                                     <button
-                                                        onClick={() => addToCartProduct(product)} className="theme-btn">Add To Cart</button>
+                                                        onClick={() => addToCartProduct(product)} className="theme-btn">Customize</button>
                                                 </div>
                                             </div>
-                                            <div className="product-content">
+                                            {/* <div className="product-content">
                                                 <div className="star">
                                                     <i className="fa-solid fa-star"></i>
                                                     <i className="fa-solid fa-star"></i>
@@ -131,17 +131,17 @@ const ProductSection = ({ products, addToCartProduct }) => {
                                                 </div>
                                                 <h6><Link onClick={ClickHandler} to={`/shop-details/${product.slug}`}>{product.title}</Link></h6>
                                                 <span>{product.price}</span>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 ))}
                         </div>
                     </div>
-                    <div id="Tab3" style={{ display: activeTab === 'Tab3' ? 'block' : 'none' }}>
+                    {/* <div id="Tab3" style={{ display: activeTab === 'Tab3' ? 'block' : 'none' }}>
                         <div className="row">
                             {products.length > 0 &&
-                                products.slice(0, 8).map((product, pitem) => (
-                                    <div className="col-xl-3 col-lg-4 col-md-6" key={pitem}>
+                                products.slice(0, 9).map((product, pitem) => (
+                                    <div className="col-xl-4 col-lg-4 col-md-4" key={pitem}>
                                         <div className="product-box-items">
                                             <div className="product-image">
                                                 <img src={product.proImg} alt="img" />
@@ -183,8 +183,8 @@ const ProductSection = ({ products, addToCartProduct }) => {
                     <div id="Tab4" style={{ display: activeTab === 'Tab4' ? 'block' : 'none' }}>
                         <div className="row">
                             {products.length > 0 &&
-                                products.slice(0, 8).map((product, pitem) => (
-                                    <div className="col-xl-3 col-lg-4 col-md-6" key={pitem}>
+                                products.slice(0, 9).map((product, pitem) => (
+                                    <div className="col-xl-4 col-lg-4 col-md-4" key={pitem}>
                                         <div className="product-box-items">
                                             <div className="product-image">
                                                 <img src={product.proImg} alt="img" />
@@ -222,11 +222,11 @@ const ProductSection = ({ products, addToCartProduct }) => {
                                     </div>
                                 ))}
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-                <div className="shop-button text-center mt-5 " >
+                {/* <div className="shop-button text-center mt-5 " >
                     <Link onClick={ClickHandler} to="/shop" className="theme-btn">View all Product</Link>
-                </div>
+                </div> */}
             </div>
         </section>
     );

@@ -53,7 +53,25 @@ const about3 = () => {
                                     A full administration printing background. Print shirts for yourself <br />
                                     or your online business Beautiful, customizable template,
                                 </p>
-                                <div className="icon-wrapper">
+                                <div className="icon-wrapper d-flex flex-nowrap gap-4">
+                                    <div className="icon-items wow fadeInUp" data-wow-delay=".3s">
+                                        <div className="icon">
+                                            <img src={lineab1} alt="img" />
+                                        </div>
+                                        <h4>
+                                            Mix and match colors, <br />
+                                            sizes, and designs
+                                        </h4>
+                                    </div>
+                                    <div className="icon-items wow fadeInUp" data-wow-delay=".5s">
+                                        <div className="icon">
+                                            <img src={lineab2} alt="img" />
+                                        </div>
+                                        <h4>
+                                            Top quality prints using <br />
+                                            the latest technology
+                                        </h4>
+                                    </div>
                                     <div className="icon-items wow fadeInUp" data-wow-delay=".3s">
                                         <div className="icon">
                                             <img src={lineab1} alt="img" />
