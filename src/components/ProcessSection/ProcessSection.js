@@ -21,8 +21,7 @@ const ProcessSection = () => {
                         </div>
                         <div className="feature-content">
                             <h5>
-                                Certified Print Shop<br/>
-                                    100% Authentic
+                                Choose Your Model
                             </h5>
                         </div>
                     </div>
@@ -32,8 +31,7 @@ const ProcessSection = () => {
                         </div>
                         <div className="feature-content">
                             <h5>
-                                Fast Delivery From 10<br/>
-                                    Working Days
+                                Upload Your Design
                             </h5>
                         </div>
                     </div>
@@ -43,8 +41,7 @@ const ProcessSection = () => {
                         </div>
                         <div className="feature-content">
                             <h5>
-                                Well- Founded Print<br/>
-                                    Top - Service
+                                Customize Textures & Colors 
                             </h5>
                         </div>
                     </div>
@@ -54,8 +51,7 @@ const ProcessSection = () => {
                         </div>
                         <div className="feature-content">
                             <h5>
-                                Flexible Orders<br/>
-                                    Module
+                                Animate Your Mockup 
                             </h5>
                         </div>
                     </div>
@@ -65,8 +61,7 @@ const ProcessSection = () => {
                         </div>
                         <div className="feature-content">
                             <h5>
-                                Simple & Digital<br/>
-                                    Process
+                                Export & Share
                             </h5>
                         </div>
                     </div>

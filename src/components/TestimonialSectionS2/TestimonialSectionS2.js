@@ -76,11 +76,10 @@ const TestimonialSectionS2 = () => {
                                             style={{ backgroundImage: `url(${Tclient1})` }}
                                         ></div>
                                         <p>
-                                            The experience with Ave has been nothing short of amazing. So much better than other themes I’ve used – wish I had seen this one first and saved my wasted time and money on other themes! I’d recommend this theme in a heartbeat!
-                                        </p>
+                                            3Dmock completely changed the way my store looks. Before, I was using flat mockups that didn’t really capture attention. Now, every product moves, the fabric looks real, and customers actually interact more with my pages. My conversion rate jumped almost 20% after adding animated mockups!                                        </p>
                                         <div className="client-content">
-                                            <h4>Mathias Herasen</h4>
-                                            <span>ThemeForest Exclusive</span>
+                                            <h4>MAlex M</h4>
+                                            <span>Founder of Driftwear</span>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -94,11 +93,11 @@ const TestimonialSectionS2 = () => {
                                             style={{ backgroundImage: `url(${Tclient2})` }}
                                         ></div>
                                         <p>
-                                            The experience with Ave has been nothing short of amazing. So much better than other themes I’ve used – wish I had seen this one first and saved my wasted time and money on other themes! I’d recommend this theme in a heartbeat!
+                                            As a POD seller, I’ve tried countless mockup tools, but nothing comes close to 3Dmock. It saves me hours every week, and the quality of the animation is top-tier. The models look so realistic that people often ask if we shot real videos. It’s become a must-have in our workflow.
                                         </p>
                                         <div className="client-content">
-                                            <h4>Shikhon Islam</h4>
-                                            <span>Web Developer</span>
+                                            <h4>Sarah J</h4>
+                                            <span>WOwner of TeeHaus</span>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -112,11 +111,44 @@ const TestimonialSectionS2 = () => {
                                             style={{ backgroundImage: `url(${Tclient3})` }}
                                         ></div>
                                         <p>
-                                            The experience with Ave has been nothing short of amazing. So much better than other themes I’ve used – wish I had seen this one first and saved my wasted time and money on other themes! I’d recommend this theme in a heartbeat!
+                                            I build Shopify stores for clients, and 3Dmock instantly elevates every project. The integration is smooth, the render quality is insane, and it gives stores a premium, modern feel. Every time I show a demo, the client is impressed. It’s a small tool that makes a huge impact.                                        </p>
+                                        <div className="client-content">
+                                            <h4> Liam T</h4>
+                                            <span>Shopify Expert</span>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className="testimonial-box-items">
+                                        <div className="overlay-style"></div>
+                                        <div className="overlay-style-2"></div>
+                                        <div
+                                            className="client-img bg-cover"
+                                            style={{ backgroundImage: `url(${Tclient3})` }}
+                                        ></div>
+                                        <p>
+                                            We started using 3Dmock for product ads, and the results were unbelievable. Our CTR doubled in the first week. The animated mockups look cinematic — they grab attention in seconds. It’s the kind of visual upgrade that directly impacts performance.                                                                                </p>
+                                        <div className="client-content">
+                                            <h4> Lisa R</h4>
+                                            <span>Creative Director at BoldAds Agency</span>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testimonial-box-items">
+                                        <div className="overlay-style"></div>
+                                        <div className="overlay-style-2"></div>
+                                        <div
+                                            className="client-img bg-cover"
+                                            style={{ backgroundImage: `url(${Tclient3})` }}
+                                        ></div>
+                                        <p>
+                                            We handle dozens of apparel designs daily, and 3Dmock simplified everything. Instead of generating static mockups one by one, we upload a design and get dynamic versions for all color variants automatically. It’s fast, consistent, and the realism is unmatched                                       
                                         </p>
                                         <div className="client-content">
-                                            <h4>Kawser Ahmed</h4>
-                                            <span>ThemeForest Exclusive</span>
+                                            <h4> Daniel P</h4>
+                                            <span> Co-founder of InkedLab</span>
                                         </div>
                                     </div>
                                 </SwiperSlide>

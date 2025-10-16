@@ -49,6 +49,7 @@ const HomePage = ({ addToCart }) => {
             <NavbarS3 hclass={'header-section'} />
             {/* <Hero /> */}
             <Hero3 />
+            
             <BrandSectionS2 />
             <ProductSection
                 addToCartProduct={addToCartProduct}
@@ -57,6 +58,7 @@ const HomePage = ({ addToCart }) => {
             <About3 />
             <ProcessSection />
             <TestimonialSectionS2 />
+            <PricingSection />
             <FaqSection />
             <CtaSectionS2 />
             <FooterS3 />

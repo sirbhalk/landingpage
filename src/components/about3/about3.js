@@ -45,13 +45,11 @@ const about3 = () => {
                             <div className="product-demand-content">
                                 <div className="section-title">
                                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                                        Create And Sell Custom On-
-                                        <span> Demand Products <img src={lineab} alt="img" /></span>
+                                        Every Mockup Deserves Realistic Motion
                                     </h2>
                                 </div>
                                 <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                    A full administration printing background. Print shirts for yourself <br />
-                                    or your online business Beautiful, customizable template,
+                                    Pick a product, add your design, and see it move with realistic textures and animations<br />
                                 </p>
                                 <div className="icon-wrapper d-flex flex-nowrap gap-4">
                                     <div className="icon-items wow fadeInUp" data-wow-delay=".3s">
@@ -59,8 +57,7 @@ const about3 = () => {
                                             <img src={lineab1} alt="img" />
                                         </div>
                                         <h4>
-                                            Mix and match colors, <br />
-                                            sizes, and designs
+                                            Custom design
                                         </h4>
                                     </div>
                                     <div className="icon-items wow fadeInUp" data-wow-delay=".5s">
@@ -68,8 +65,8 @@ const about3 = () => {
                                             <img src={lineab2} alt="img" />
                                         </div>
                                         <h4>
-                                            Top quality prints using <br />
-                                            the latest technology
+                                            Realistic Textures
+
                                         </h4>
                                     </div>
                                     <div className="icon-items wow fadeInUp" data-wow-delay=".3s">
@@ -77,8 +74,8 @@ const about3 = () => {
                                             <img src={lineab1} alt="img" />
                                         </div>
                                         <h4>
-                                            Mix and match colors, <br />
-                                            sizes, and designs
+                                            Dynamic Animations
+
                                         </h4>
                                     </div>
                                     <div className="icon-items wow fadeInUp" data-wow-delay=".5s">
@@ -86,8 +83,8 @@ const about3 = () => {
                                             <img src={lineab2} alt="img" />
                                         </div>
                                         <h4>
-                                            Top quality prints using <br />
-                                            the latest technology
+                                            High-Quality Exports
+
                                         </h4>
                                     </div>
                                 </div>
