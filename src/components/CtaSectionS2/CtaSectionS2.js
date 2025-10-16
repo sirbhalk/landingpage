@@ -14,7 +14,7 @@ const ClickHandler = () => {
 
 const CtaSectionS2 = () => {
     return (
-        <section className="cta-section-3">
+        <section className="cta-section-3 m-5">
             {/* <div className="mycustom-marque style-3">
                 <div className="scrolling-wrap">
                     <div className="comm cmn-style-2">

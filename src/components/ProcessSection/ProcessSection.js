@@ -9,7 +9,7 @@ import Ps6 from '../../img/feature/growth1.png'
 
 const ProcessSection = () => {
     return (
-        <section className="feature-section-3 section-padding pt-0">
+        <section className="feature-section-3 section-padding ">
             <div className="container custom-container-2">
                 <div className="fearure-wrapper-3">
                     <div className="line-shape">

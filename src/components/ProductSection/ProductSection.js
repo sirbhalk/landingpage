@@ -17,7 +17,7 @@ const ProductSection = ({ products, addToCartProduct }) => {
     }, []);
 
     return (
-        <section className="product-section section-padding pt-0">
+        <section className="product-section section-padding ">
             <div className="shape-image">
                 <img src={ProdactShape} alt="img" />
             </div>

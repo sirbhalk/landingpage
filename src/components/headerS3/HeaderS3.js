@@ -60,9 +60,9 @@ const HeaderS3 = (props) => {
                                     <nav id="mobile-menu">
                                         <ul>
                                             <li className="has-dropdown active menu-thumb">
-                                                <Link onClick={ClickHandler} to="/home">
+                                                <a onClick={ClickHandler} href="https://3d-mock-app.vercel.app/">
                                                     3D Model Configurator
-                                                </Link>
+                                                </a>
                                                 {/* <ul className="submenu has-homemenu">
                                                     <li>
                                                         <div className="homemenu-items">
