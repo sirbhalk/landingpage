@@ -74,7 +74,7 @@ const Hero3 = () => {
                                 <div className="col-xxl-5 col-xl-6 col-lg-6">
                                     <div className="hero-image-items">
                                         <div className="hero-image">
-                                            <img src={'https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/model1.png'} alt="t-shirt" />
+                                            <img src={Tshirt} alt="t-shirt" />
                                         </div>
                                         <div className="color-box">
                                             <img src={Bucket} alt="bucket color" />

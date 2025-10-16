@@ -5,6 +5,7 @@ import Mq2 from '../../img/cta-bg-2.jpg'
 import Mq3 from '../../img/print-box.png'
 import Mq4 from '../../img/hand-bag.png'
 import Mq5 from '../../img/cta-sticker.png'
+// import Mq6 from '../../img/cta-t-shirt.png'
 import Mq6 from '../../img/cta-t-shirt.png'
 
 const ClickHandler = () => {
