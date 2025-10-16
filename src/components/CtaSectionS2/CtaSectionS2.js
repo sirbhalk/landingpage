@@ -14,7 +14,7 @@ const ClickHandler = () => {
 const CtaSectionS2 = () => {
     return (
         <section className="cta-section-3">
-            <div className="mycustom-marque style-3">
+            {/* <div className="mycustom-marque style-3">
                 <div className="scrolling-wrap">
                     <div className="comm cmn-style-2">
                         <div className="cmn-textslide">Design.</div>
@@ -35,7 +35,7 @@ const CtaSectionS2 = () => {
                         <div><img src={Mq1} alt="img" /></div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="container">
                 <div className="cta-wrapper-2 bg-cover"  style={{ backgroundImage: `url(${Mq2})` }}>
                     <div className="prite-box float-bob-y">

@@ -101,7 +101,8 @@ const ProductSection = ({ products, addToCartProduct }) => {
                                     <div className="col-xl-4 col-lg-4 col-md-4" key={pitem}>
                                         <div className="product-box-items">
                                             <div className="product-image">
-                                                <img src={product.proImg} alt="img" />
+                                                {/* <img src={product.proImg} alt="img" /> */}
+                                                <img src={'https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/SCR-20251016-nkqh.jpeg.jpg'} alt="img" />
                                                 <ul className="product-icon d-grid align-items-center">
                                                     <li>
                                                         <button
