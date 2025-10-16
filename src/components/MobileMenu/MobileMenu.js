@@ -8,138 +8,138 @@ import './style.css';
 const menus = [
     {
         id: 1,
-        title: 'Home',
+        title: '3D Model Configurator ',
         link: '#',
-        submenu: [
-            {
-                id: 11,
-                title: 'Home 01',
-                link: '/home'
-            },
-            {
-                id: 12,
-                title: 'Home 02',
-                link: '/home-2'
-            },
-            {
-                id: 13,
-                title: 'Home 03',
-                link: '/home-3'
-            }
-        ]
+        // submenu: [
+        //     {
+        //         id: 11,
+        //         title: 'Home 01',
+        //         link: '/home'
+        //     },
+        //     {
+        //         id: 12,
+        //         title: 'Home 02',
+        //         link: '/home-2'
+        //     },
+        //     {
+        //         id: 13,
+        //         title: 'Home 03',
+        //         link: '/home-3'
+        //     }
+        // ]
     },
     {
         id: 2,
-        title: 'About Us',
+        title: 'Products ',
         link: '/about',
     },
     {
         id: 3,
-        title: 'Services',
+        title: 'Pricing ',
         link: '#',
-        submenu: [
-            {
-                id: 31,
-                title: 'Services',
-                link: '/service',
-            },
-            {
-                id: 32,
-                title: 'Service Details',
-                link: '/service-details/Sticker-printing'
-            }
-        ]
+        // submenu: [
+        //     {
+        //         id: 31,
+        //         title: 'Services',
+        //         link: '/service',
+        //     },
+        //     {
+        //         id: 32,
+        //         title: 'Service Details',
+        //         link: '/service-details/Sticker-printing'
+        //     }
+        // ]
     },
     {
         id: 4,
-        title: 'Services',
+        title: 'Become an affiliate',
         link: '#',
-        submenu: [
-            {
-                id: 41,
-                title: 'Services',
-                link: '/service',
-            },
-            {
-                id: 42,
-                title: 'Service Details',
-                link: '/service-details/Sticker-printing'
-            }
-        ]
+        // submenu: [
+        //     {
+        //         id: 41,
+        //         title: 'Services',
+        //         link: '/service',
+        //     },
+        //     {
+        //         id: 42,
+        //         title: 'Service Details',
+        //         link: '/service-details/Sticker-printing'
+        //     }
+        // ]
     },
-    {
-        id: 5,
-        title: 'Pages',
-        link: '#',
-        submenu: [
-            {
-                id: 51,
-                title: 'Projects',
-                link: '/project',
-            },
-            {
-                id: 52,
-                title: 'Project Details',
-                link: '/project-details/3d-Genareted-Cate'
-            },
-            {
-                id: 53,
-                title: '404 Page',
-                link: '/404'
-            }
-        ]
-    },
+    // {
+    //     id: 5,
+    //     title: 'Pages',
+    //     link: '#',
+    //     submenu: [
+    //         {
+    //             id: 51,
+    //             title: 'Projects',
+    //             link: '/project',
+    //         },
+    //         {
+    //             id: 52,
+    //             title: 'Project Details',
+    //             link: '/project-details/3d-Genareted-Cate'
+    //         },
+    //         {
+    //             id: 53,
+    //             title: '404 Page',
+    //             link: '/404'
+    //         }
+    //     ]
+    // },
 
-    {
-        id: 6,
-        title: 'Shop',
-        link: '#',
-        submenu: [
-            {
-                id: 61,
-                title: 'Shop Page',
-                link: '/shop',
-            },
-            {
-                id: 62,
-                title: 'Shop Details',
-                link: '/shop-details/Calendar-printing-design'
-            },
-            {
-                id: 63,
-                title: 'Shop Cart',
-                link: '/shop-cart'
-            },
-            {
-                id: 64,
-                title: 'Checkout',
-                link: '/checkout'
-            }
-        ]
-    },
+    // {
+    //     id: 6,
+    //     title: 'Shop',
+    //     link: '#',
+    //     submenu: [
+    //         {
+    //             id: 61,
+    //             title: 'Shop Page',
+    //             link: '/shop',
+    //         },
+    //         {
+    //             id: 62,
+    //             title: 'Shop Details',
+    //             link: '/shop-details/Calendar-printing-design'
+    //         },
+    //         {
+    //             id: 63,
+    //             title: 'Shop Cart',
+    //             link: '/shop-cart'
+    //         },
+    //         {
+    //             id: 64,
+    //             title: 'Checkout',
+    //             link: '/checkout'
+    //         }
+    //     ]
+    // },
 
-    {
-        id: 7,
-        title: 'Blog',
-        link: '#',
-        submenu: [
-            {
-                id: 71,
-                title: 'Blog',
-                link: '/news',
-            },
-            {
-                id: 72,
-                title: 'Blog Details',
-                link: '/blog-single/How-To-Teach-Kids-Ramadan-Isn’t-About-Food',
-            },
+    // {
+    //     id: 7,
+    //     title: 'Blog',
+    //     link: '#',
+    //     submenu: [
+    //         {
+    //             id: 71,
+    //             title: 'Blog',
+    //             link: '/news',
+    //         },
+    //         {
+    //             id: 72,
+    //             title: 'Blog Details',
+    //             link: '/blog-single/How-To-Teach-Kids-Ramadan-Isn’t-About-Food',
+    //         },
            
-        ]
-    },
+    //     ]
+    // },
   
     {
         id: 88,
-        title: 'Contact',
+        title: 'Login / Sign Up',
         link: '/contact',
     }
 

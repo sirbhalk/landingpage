@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { connect } from "react-redux";
 import { navigationHelpers } from '../../config/appConfig';
 import { removeFromCart } from "../../store/actions/action";
-import HeaderTopbar from '../HeaderTopbar/HeaderTopbar';
+// import HeaderTopbar from '../HeaderTopbar/HeaderTopbar';
 import Logo from '../../img/logo/black-logo.svg';
 import Home1 from '../../img/header/home-1.jpg';
 import Home2 from '../../img/header/home-2.jpg';
@@ -46,7 +46,7 @@ const Header = (props) => {
 
     return (
         <header className={props.hclass}>
-            <HeaderTopbar />
+            {/* <HeaderTopbar /> */}
             <div id="header-sticky" className={isSticky ? 'sticky' : 'header-1'}>
                 <div className="container-fluid">
                     <div className="mega-menu-wrapper">

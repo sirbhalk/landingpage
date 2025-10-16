@@ -43,7 +43,7 @@ const HeaderS3 = (props) => {
 
     return (
         <header className={props.hclass}>
-            <HeaderTopbarS3 />
+            {/* <HeaderTopbarS3 /> */}
             <div id="header-sticky" className={isSticky ? 'header-1 style-2 sticky' : 'header-1 style-2'}>
                 <div className="container-fluid">
                     <div className="mega-menu-wrapper">
@@ -61,9 +61,9 @@ const HeaderS3 = (props) => {
                                         <ul>
                                             <li className="has-dropdown active menu-thumb">
                                                 <Link onClick={ClickHandler} to="/home">
-                                                    Home
+                                                    3D Model Configurator
                                                 </Link>
-                                                <ul className="submenu has-homemenu">
+                                                {/* <ul className="submenu has-homemenu">
                                                     <li>
                                                         <div className="homemenu-items">
                                                             <div className="homemenu">
@@ -113,41 +113,41 @@ const HeaderS3 = (props) => {
                                                             </div>
                                                         </div>
                                                     </li>
-                                                </ul>
+                                                </ul> */}
                                             </li>
                                             <li className="has-dropdown active d-xl-none">
                                                 <Link onClick={ClickHandler} to="/team" className="border-none">
-                                                    Home
+                                                    3D Model Configurator
                                                 </Link>
-                                                <ul className="submenu">
+                                                {/* <ul className="submenu">
                                                     <li><Link onClick={ClickHandler} to="/home">Home 01</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/home-2">Home 02</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/home-3">Home 03</Link></li>
-                                                </ul>
+                                                </ul> */}
                                             </li>
                                             <li>
-                                                <Link onClick={ClickHandler} to="/about">About Us</Link>
+                                                <Link onClick={ClickHandler} to="/about">Products </Link>
                                             </li>
                                             <li>
                                                 <Link onClick={ClickHandler} to="#">
-                                                    Services
+                                                    Pricing 
                                                 </Link>
-                                                <ul className="submenu">
+                                                {/* <ul className="submenu">
                                                     <li><Link onClick={ClickHandler} to="/service">Services</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/service-details/Sticker-printing">Service Details</Link></li>
-                                                </ul>
+                                                </ul> */}
                                             </li>
                                             <li className="has-dropdown">
                                                 <Link onClick={ClickHandler} to="#">
-                                                    Pages
+                                                    Become an affiliate
                                                 </Link>
-                                                <ul className="submenu">
+                                                {/* <ul className="submenu">
                                                     <li><Link onClick={ClickHandler} to="/project">Projects</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/project-details/3d-Genareted-Cate">Project Details</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/404">404 Page</Link></li>
-                                                </ul>
+                                                </ul> */}
                                             </li>
-                                            <li>
+                                            {/* <li>
                                                 <Link onClick={ClickHandler} to="#">
                                                     Shop
                                                 </Link>
@@ -166,16 +166,16 @@ const HeaderS3 = (props) => {
                                                     <li><Link onClick={ClickHandler} to="/news">Blog</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/blog-single/How-To-Teach-Kids-Ramadan-Isn’t-About-Food">Blog Details</Link></li>
                                                 </ul>
-                                            </li>
-                                            <li>
+                                            </li> */}
+                                            {/* <li>
                                                 <Link onClick={ClickHandler} to="/contact">Contact Us</Link>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div className="header-right d-flex justify-content-end align-items-center">
-                                <div className="menu-cart">
+                                {/* <div className="menu-cart">
                                     <Link onClick={ClickHandler} to="/shop-cart" className="cart-icon">
                                         <i className="far fa-shopping-basket"></i>
                                         <span>{carts.length}</span>
@@ -184,9 +184,9 @@ const HeaderS3 = (props) => {
                                 <div className="content">
                                     <p>HOTLINE</p>
                                     <h5><a onClick={ClickHandler} to="del:00190081889">00190081889</a></h5>
-                                </div>
+                                </div> */}
                                 <div className="header-button">
-                                    <Link onClick={ClickHandler} to="/contact" className="theme-btn">Contact Us</Link>
+                                    <Link onClick={ClickHandler} to="/contact" className="theme-btn"> Login / Sign Up</Link>
                                 </div>
                                 <div className="header__hamburger d-xl-none my-auto">
                                     <div className="sidebar__toggle">

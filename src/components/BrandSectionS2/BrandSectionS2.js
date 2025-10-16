@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 
-import logo1 from '../../img/brand/brand-logo-11.png'
-import logo2 from '../../img/brand/brand-logo-12.png'
-import logo3 from '../../img/brand/brand-logo-13.png'
-import logo4 from '../../img/brand/brand-logo-14.png'
-import logo5 from '../../img/brand/brand-logo-15.png'
-import logo6 from '../../img/brand/brand-logo-16.png'
+import logo1 from '../../img/brand/1.png'
+import logo2 from '../../img/brand/2.png'
+import logo3 from '../../img/brand/3.png'
+import logo4 from '../../img/brand/4.png'
+import logo5 from '../../img/brand/5.png'
+import logo6 from '../../img/brand/6.png'
 import logo7 from '../../img/brand/brand-logo-17.png'
 
 const BrandSectionS2 = () => {

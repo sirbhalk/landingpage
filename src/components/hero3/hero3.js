@@ -59,18 +59,16 @@ const Hero3 = () => {
                             <div className="row g-4 justify-content-between align-items-center">
                                 <div className="col-xxl-6 col-xl-6 col-lg-6">
                                     <div className="hero-content">
-                                        <h6>Digital printing Service</h6>
+                                        <h6>No 3D Skills Needed</h6>
                                         <h1>
-                                            Custom T-shirt,
-                                            <span>simplified.. <img src={Bar} alt="bar shape" /></span>
+                                            Mock it. Move it. Sell it.
                                         </h1>
                                         <p>
-                                            Beautiful, customizable template, with a ton of web blocks <br />
-                                            to create an amazing website that looks
+                                            Bring Your Products to Life with Animated 3D Mockups
                                         </p>
                                     </div>
                                     <div className="hero-button">
-                                        <Link onClick={ClickHandler} to="/shop" className="theme-btn">Order Today</Link>
+                                        <Link onClick={ClickHandler} to="/shop" className="theme-btn">Try It For Free</Link>
                                     </div>
                                 </div>
                                 <div className="col-xxl-5 col-xl-6 col-lg-6">
@@ -98,14 +96,12 @@ const Hero3 = () => {
                             <div className="row g-4 justify-content-between align-items-center">
                                 <div className="col-xxl-6 col-xl-6 col-lg-6">
                                     <div className="hero-content">
-                                        <h6>Digital printing Service</h6>
+                                        <h6>No 3D Skills Needed</h6>
                                         <h1>
-                                            Custom T-shirt,
-                                            <span>simplified.. <img src={Bar} alt="bar shape" /></span>
+                                            Mock it. Move it. Sell it.
                                         </h1>
                                         <p>
-                                            Beautiful, customizable template, with a ton of web blocks <br />
-                                            to create an amazing website that looks
+                                            Bring Your Products to Life with Animated 3D Mockups
                                         </p>
                                     </div>
                                     <div className="hero-button">
@@ -137,14 +133,12 @@ const Hero3 = () => {
                             <div className="row g-4 justify-content-between align-items-center">
                                 <div className="col-xxl-6 col-xl-6 col-lg-6">
                                     <div className="hero-content">
-                                        <h6>Digital printing Service</h6>
+                                        <h6>No 3D Skills Needed</h6>
                                         <h1>
-                                            Custom T-shirt,
-                                            <span>simplified.. <img src={Bar} alt="bar shape" /></span>
+                                            Mock it. Move it. Sell it.
                                         </h1>
                                         <p>
-                                            Beautiful, customizable template, with a ton of web blocks <br />
-                                            to create an amazing website that looks
+                                            Bring Your Products to Life with Animated 3D Mockups
                                         </p>
                                     </div>
                                     <div className="hero-button">
