@@ -50,14 +50,13 @@ const CtaSectionS2 = () => {
                     </div>
                     <div className="cta-content">
                         <div className="section-title">
-                            <h6 className="bg-white wow fadeInUp">printing Service</h6>
+                            <h6 className="bg-white wow fadeInUp">PARTNER REWARDS PROGRAM</h6>
                             <h2 className="text-white split-text right">
-                                Ready To Create Some <br/>
-                                    Custom Products?
+                                BECOME A 3DMOCK PARTNER <br/>AND EARD 30% COMMISSION
                             </h2>
                         </div>
                         <div className="cta-btn mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                            <Link onClick={ClickHandler} to="/about" className="theme-btn">more about us</Link>
+                            <Link onClick={ClickHandler} to="/about" className="theme-btn"> OPEN A PARTNER ACCOUNT</Link>
                         </div>
                     </div>
                     <div className="cta-image">

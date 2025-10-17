@@ -46,14 +46,12 @@ const FooterS3 = () => {
                             <div className="single-footer-widget">
                                 <div className="widget-head">
                                     <Link onClick={ClickHandler} to="/home">
-                                        <img src={Logo} alt="logo-img" />
+                                        <img src={'https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/logo.png'} style={{width: '100px', height: '100px'}} alt="logo-img" />
                                     </Link>
                                 </div>
                                 <div className="footer-content">
                                     <p className="text-white">
-                                        A new way to make the payments easy,
-                                        reliable and 100% secure. claritatem itamconse quat. Exerci tation ullamcorper.
-                                    </p>
+                                        Bring your designs to life with realistic 3D mockups and smooth animations — instantly and effortlessly.                                    </p>
                                     <div className="social-icon d-flex align-items-center">
                                         <Link onClick={ClickHandler} to="#"><i className="fab fa-facebook-f"></i></Link>
                                         <Link onClick={ClickHandler} to="#"><i className="fab fa-twitter"></i></Link>
@@ -74,11 +72,11 @@ const FooterS3 = () => {
                                             Faqs
                                         </Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link onClick={ClickHandler} to="/privacy">
                                             Setting
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <Link onClick={ClickHandler} to="/terms-conditions">
                                             Terms Conditions
@@ -94,11 +92,11 @@ const FooterS3 = () => {
                                             Refund
                                         </Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link onClick={ClickHandler} to="/contact">
                                             Contact
                                         </Link>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>
@@ -134,7 +132,7 @@ const FooterS3 = () => {
                         <p className="wow fadeInLeft" data-wow-delay=".3s">
                             Copyright <span>@2024</span> <Link onClick={ClickHandler} to="/home">Ui-drops</Link> All Rights Reserved
                         </p>
-                        <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
+                        {/* <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
                             <li>
                                 <Link onClick={ClickHandler} to="/">
                                     Faqs
@@ -160,7 +158,7 @@ const FooterS3 = () => {
                                     Contact
                                 </Link>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </div>
