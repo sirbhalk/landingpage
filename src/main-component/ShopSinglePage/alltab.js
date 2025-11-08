@@ -117,7 +117,7 @@ const Alltab = (props) => {
                     <div className="review-items">
                         <div className="admin-items d-flex flex-wrap flex-md-nowrap align-items-center pb-4">
                             <div className="admin-img pb-4 pb-md-0 me-4">
-                                <img src={Sb1} alt="image" />
+                                <img src={Sb1} alt="Portrait of Miklos Salsa" />
                             </div>
                             <div className="content p-4">
                                 <div className="head-content pb-1 d-flex flex-wrap justify-content-between">
@@ -137,7 +137,7 @@ const Alltab = (props) => {
                         </div>
                         <div className="admin-items d-flex flex-wrap flex-md-nowrap align-items-center pb-4">
                             <div className="admin-img pb-4 pb-md-0 me-4">
-                                <img src={Sb2} alt="image" />
+                                <img src={Sb2} alt="Portrait of Ethan Turner" />
                             </div>
                             <div className="content p-4">
                                 <div className="head-content pb-1 d-flex flex-wrap justify-content-between">
@@ -157,7 +157,7 @@ const Alltab = (props) => {
                         </div>
                         <div className="admin-items d-flex flex-wrap flex-md-nowrap align-items-center pb-4">
                             <div className="admin-img pb-4 pb-md-0 me-4">
-                                <img src={Sb3} alt="image" />
+                                <img src={Sb3} alt="Portrait of Miklos Salsa" />
                             </div>
                             <div className="content p-4">
                                 <div className="head-content pb-1 d-flex flex-wrap justify-content-between">
@@ -177,7 +177,7 @@ const Alltab = (props) => {
                         </div>
                         <div className="admin-items d-flex flex-wrap flex-md-nowrap align-items-center pb-4">
                             <div className="admin-img pb-4 pb-md-0 me-4">
-                                <img src={Sb2} alt="image" />
+                                <img src={Sb2} alt="Portrait of Ethan Turner" />
                             </div>
                             <div className="content p-4">
                                 <div className="head-content pb-1 d-flex flex-wrap justify-content-between">

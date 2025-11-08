@@ -7,8 +7,6 @@ import CtaSectionS2 from '../../components/CtaSectionS2/CtaSectionS2';
 import FooterS3 from '../../components/footerS3/FooterS3';
 import CursorMaus from '../../components/CursorMaus/CursorMaus';
 
-import P1 from '../../img/project/details.jpg'
-import P2 from '../../img/project/details-2.jpg'
 import P3 from '../../img/project/details-3.jpg'
 import P4 from '../../img/project/details-4.jpg'
 

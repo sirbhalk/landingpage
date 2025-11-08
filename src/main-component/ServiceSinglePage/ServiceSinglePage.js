@@ -15,14 +15,11 @@ import simg2 from '../../img/service/details-4.jpg'
 import simg3 from '../../img/service/details-5.jpg'
 import simg4 from '../../img/service/details-6.jpg'
 
-const ServiceSinglePage = (props) => {
+const ServiceSinglePage = () => {
     const { slug } = useParams()
 
     const serviceDetails = Services.find(item => item.slug === slug)
 
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
-    }
     return (
         <Fragment>
             <NavbarS2 hclass={'header-section-2 style-two'} />

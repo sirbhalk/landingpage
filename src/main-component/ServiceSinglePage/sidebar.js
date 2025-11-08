@@ -3,11 +3,7 @@ import Services from '../../api/Services';
 import { Link } from 'react-router-dom'
 import Bg from '../../img/service/service-contact.jpg'
 
-const ServiceSidebar = (props) => {
-
-    const SubmitHandler = (e) => {
-        e.preventDefault()
-    }
+const ServiceSidebar = () => {
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);

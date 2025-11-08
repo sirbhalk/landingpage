@@ -15,20 +15,15 @@ import ProductTabs from './alltab';
 
 const ProductSinglePage =(props) => {
   
-
     const { slug } = useParams()
 
-    
-    const productsArray = api();
-    const Allproduct = productsArray
-
-    
     const {addToCart} = props;
-    const [product, setProduct] = useState({});
+    const [product, setProduct] = useState([]);
     
     useEffect(() => {
-        setProduct(Allproduct.filter(Allproduct => Allproduct.slug === String(slug)))
-    }, []);
+        const products = api();
+        setProduct(products.filter(item => item.slug === String(slug)));
+    }, [slug]);
     
     const item = product[0];
 
