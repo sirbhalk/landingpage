@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProdactShape from '../../img/product/shape-1.png'
 import { Link } from 'react-router-dom';
+import { navigationHelpers } from '../../config/appConfig';
 
 const ProductSection = ({ products, addToCartProduct }) => {
 
@@ -15,6 +16,26 @@ const ProductSection = ({ products, addToCartProduct }) => {
     useEffect(() => {
         openTab('Tab2');
     }, []);
+
+    const handleCustomize = (product) => {
+        if (!product) {
+            navigationHelpers.goToConfigurator();
+            return;
+        }
+
+        const modelKeySource = product.configuratorModel || product.title || product.slug;
+        const normalizedModelKey = modelKeySource
+            ? modelKeySource
+                .toString()
+                .toLowerCase()
+                .trim()
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/(^-|-$)/g, '')
+            : '';
+
+        const path = normalizedModelKey ? `/?model=${encodeURIComponent(normalizedModelKey)}` : '';
+        navigationHelpers.goToConfigurator(path);
+    };
 
     return (
         <section className="product-section section-padding ">
@@ -101,8 +122,8 @@ const ProductSection = ({ products, addToCartProduct }) => {
                                     <div className="col-xl-4 col-lg-4 col-md-4" key={pitem}>
                                         <div className="product-box-items">
                                             <div className="product-image">
-                                                {/* <img src={product.proImg} alt="img" /> */}
-                                                <img src={'https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/SCR-20251016-nkqh.jpeg.jpg'} alt="img" />
+                                                <img src={product.proImg} alt="img" />
+                                                {/* <img src={'https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/SCR-20251016-nkqh.jpeg.jpg'} alt="img" /> */}
                                                 <ul className="product-icon d-grid align-items-center">
                                                     <li>
                                                         <button
@@ -119,7 +140,7 @@ const ProductSection = ({ products, addToCartProduct }) => {
                                                 </ul>
                                                 <div className="shop-btn">
                                                     <button
-                                                        onClick={() => addToCartProduct(product)} className="theme-btn">Customize</button>
+                                                        onClick={() => handleCustomize(product)} className="theme-btn">Customize</button>
                                                 </div>
                                             </div>
                                             {/* <div className="product-content">

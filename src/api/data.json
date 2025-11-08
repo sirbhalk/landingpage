@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "proImg": "/product/09.jpg",
-    "title": "Calendar printing design",
+    "proImg": "https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/SCR-20251016-nkqh.jpeg.jpg",
+    "title": "oversized tshirt",
     "slug": "Calendar-printing-design",
     "price": "340.00",
     "delPrice": "380.00",
@@ -11,8 +11,8 @@
   },
   {
     "id": 2,
-    "proImg": "/product/09.jpg",
-    "title": "Pattern Pillow",
+    "proImg": "https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/hoodie%20(2).png",
+    "title": "hoodie",
     "slug": "Pattern-Pillow",
     "price": "65.00",
     "delPrice": "85.00",
@@ -21,8 +21,8 @@
   },
   {
     "id": 3,
-    "proImg": "/product/09.jpg",
-    "title": "Glossy button pins",
+    "proImg": "https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/tshirt2.png",
+    "title": "tshirt",
     "slug": "Glossy-button-pins",
     "price": "285.00",
     "delPrice": "300.00",
