@@ -48,10 +48,7 @@ const CartPage = (props) => {
                           carts.map((catItem, crt) => (
                             <tr className="cart-item" key={crt}>
                               <td className="cart-item-info">
-                                <img
-                                  src={catItem.proImg}
-                                  alt={catItem.proTitle || catItem.title || 'Cart item'}
-                                />
+                                <img src={catItem.proImg} alt="Image" />
                               </td>
                               <td className="cart-item-price">
                                 $ <span className="base-price">{catItem.qty * catItem.price}</span>
