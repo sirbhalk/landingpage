@@ -1,31 +1,13 @@
 import React, { Fragment } from 'react';
-import Navbar from '../../components/Navbar/Navbar'
 import NavbarS3 from '../../components/NavbarS3/NavbarS3'
-import Hero from '../../components/hero/hero';
-import FeatureSection from '../../components/FeatureSection/FeatureSection';
-import About from '../../components/about/about';
-import MarqueeSection from '../../components/MarqueeSection/MarqueeSection';
-import ServiceSection from '../../components/ServiceSection/ServiceSection';
-import StoreSection from '../../components/StoreSection/StoreSection';
 import ProductSection from '../../components/ProductSection/ProductSection';
-import PortfolioSection from '../../components/PortfolioSection/PortfolioSection';
-import FunFact from '../../components/FunFact/FunFact';
-import WorksSection from '../../components/WorksSection/WorksSection';
 import ProcessSection from '../../components/ProcessSection/ProcessSection';
 import PricingSection from '../../components/PricingSection/PricingSection';
-import Testimonial from '../../components/Testimonial/Testimonial';
-import BlogSection from '../../components/BlogSection/BlogSection';
-import CtaSection from '../../components/CtaSection/CtaSection';
-import Footer from '../../components/footer/Footer';
-import CursorMaus from '../../components/CursorMaus/CursorMaus';
-import ServiceBg from '../../img/service/service-bg.jpg'
 import { connect } from "react-redux";
 import { addToCart } from "../../store/actions/action";
 import Hero3 from '../../components/hero3/hero3';
 import api from "../../api";
-import Ws6 from '../../img/feature/bg.png'
 import BrandSectionS2 from '../../components/BrandSectionS2/BrandSectionS2';
-import ProductSectionS5 from '../../components/ProductSectionS5/ProductSectionS5';
 import About3 from '../../components/about3/about3';
 import TestimonialSectionS2 from '../../components/TestimonialSectionS2/TestimonialSectionS2';
 import FaqSection from '../../components/FaqSection/FaqSection';
