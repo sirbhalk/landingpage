@@ -17,10 +17,6 @@ const BlogSingle = (props) => {
 
     const BlogDetails = blogs.find(item => item.slug === slug)
 
-    const submitHandler = (e) => {
-        e.preventDefault()
-    }
-
     return (
         <section className="news-section-3 section-padding section-bg-2">
             <div className="container">
@@ -29,7 +25,7 @@ const BlogSingle = (props) => {
                         <div className="col-12 col-lg-8">
                             <div className="single-news-post">
                                 <div className="details-image">
-                                    <img src={BlogDetails.blogSingleImg} alt="img" />
+                                    <img src={BlogDetails.blogSingleImg} alt={BlogDetails.title} />
                                 </div>
                                 <div className="details-content">
                                     <div className="post-meta">
@@ -93,19 +89,19 @@ const BlogSingle = (props) => {
                                         </div>
                                         <div className="col-xl-5 col-lg-6">
                                             <div className="post-thumb">
-                                                <img src={blog3} alt="img" />
+                                                <img src={blog3} alt="Blog post detail illustration 1" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="row g-4 mt-4 mb-4">
                                         <div className="col-lg-6">
                                             <div className="post-thumb">
-                                                <img src={blog4} alt="img" />
+                                                <img src={blog4} alt="Blog post detail illustration 2" />
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="post-thumb">
-                                                <img src={blog5} alt="img" />
+                                                <img src={blog5} alt="Blog post detail illustration 3" />
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +139,7 @@ const BlogSingle = (props) => {
                                 </div>
                                 <div className="blog-single-comment d-flex gap-4 pt-4">
                                     <div className="image">
-                                        <img src={blog6} alt="image" />
+                                        <img src={blog6} alt="Comment author avatar" />
                                     </div>
                                     <div className="content">
                                         <div className="head d-flex flex-wrap gap-2 align-items-center justify-content-between">
@@ -163,7 +159,7 @@ const BlogSingle = (props) => {
                                 </div>
                                 <div className="blog-single-comment style-2 d-flex gap-4 pt-4">
                                     <div className="image">
-                                        <img src={gl1} alt="image" />
+                                        <img src={gl1} alt="Comment author avatar 2" />
                                     </div>
                                     <div className="content">
                                         <div className="head d-flex flex-wrap gap-2 align-items-center justify-content-between">

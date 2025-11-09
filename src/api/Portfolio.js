@@ -31,7 +31,6 @@ import pS1img13 from '../img/project-details/s1.jpg'
 import pS1img14 from '../img/project-details/s3.jpg'
 import pS1img15 from '../img/project-details/s2.jpg'
 import pS1img16 from '../img/project-details/s5.jpg'
-import pS1img17 from '../img/project-details/s7.jpg'
 
 
 import pS2img1 from '../img/project-details/b1.jpg'
@@ -50,7 +49,6 @@ import pS2img13 from '../img/project-details/b12.jpg'
 import pS2img14 from '../img/project-details/b13.jpg'
 import pS2img15 from '../img/project-details/b14.jpg'
 import pS2img16 from '../img/project-details/b15.jpg'
-import pS2img17 from '../img/project-details/b10.jpg'
 
 
 

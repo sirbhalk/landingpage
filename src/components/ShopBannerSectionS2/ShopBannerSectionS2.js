@@ -23,9 +23,9 @@ const ShopBannerSectionS2 = () => {
                             <Link onClick={ClickHandler} to="/shop" className="theme-btn wow fadeInUp" data-wow-delay=".7s">Custom print now</Link>
                         </div>
                         <div className="thumb wow fadeInUp" data-wow-delay=".3s">
-                            <img src={SB1} alt="img" />
+                            <img src={SB1} alt="Custom hoodie mockup" />
                             <div className="flower-shape">
-                                <img src={SB2} alt="img" />
+                                <img src={SB2} alt="Decorative flower graphic" />
                             </div>
                         </div>
                     </div>
@@ -37,22 +37,22 @@ const ShopBannerSectionS2 = () => {
                             <h2 className="wow fadeInUp" data-wow-delay=".3s">Custom Packaging</h2>
                             <ul className="wow fadeInUp" data-wow-delay=".5s">
                                 <li>
-                                    <span><img src={SB3} /></span>
+                                    <span><img src={SB3} alt="Included feature icon" /></span>
                                     Premium Quality Custom boxes
                                 </li>
                                 <li>
-                                    <span><img src={SB3} /></span>
+                                    <span><img src={SB3} alt="Included feature icon" /></span>
                                     Free Standard Shipping
                                 </li>
                                 <li>
-                                    <span><img src={SB3} /></span>
+                                    <span><img src={SB3} alt="Included feature icon" /></span>
                                     Unnique Design & custom cloths
                                 </li>
                             </ul>
                         </div>
                         <div className="thumb-2">
                             <Link onClick={ClickHandler} to="/shop">
-                                <img src={SB4} alt="img" />
+                                <img src={SB4} alt="Custom packaging gift box" />
                             </Link>
                         </div>
                     </div>

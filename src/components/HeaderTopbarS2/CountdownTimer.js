@@ -7,6 +7,8 @@ const CountdownTimer = () => {
         minutes: 0,
         seconds: 0,
     });
+    const [headline, setHeadline] = useState("Countdown");
+    const [isFinished, setIsFinished] = useState(false);
 
     useEffect(() => {
         const second = 1000,
@@ -46,12 +48,16 @@ const CountdownTimer = () => {
                 seconds,
             });
 
-            // If the countdown is finished, show a message
             if (distance < 0) {
                 clearInterval(interval);
-                document.getElementById("headline").innerText = "It's my birthday!";
-                document.getElementById("countdown").style.display = "none";
-                document.getElementById("content").style.display = "block";
+                setHeadline("It's my birthday!");
+                setIsFinished(true);
+                setTimeLeft({
+                    days: 0,
+                    hours: 0,
+                    minutes: 0,
+                    seconds: 0,
+                });
             }
         };
 
@@ -62,24 +68,28 @@ const CountdownTimer = () => {
 
     return (
         <div>
-            <ul id="countdown">
-                <li>
-                    <span id="day">{timeLeft.days} :</span>
-                </li>
-                <li>
-                    <span id="Hours">{timeLeft.hours} :</span>
-                </li>
-                <li>
-                    <span id="Minutes">{timeLeft.minutes} :</span>
-                </li>
-                <li>
-                    <span id="Seconds">{timeLeft.seconds}</span>
-                </li>
-            </ul>
-            <h1 id="headline"></h1>
-            <div id="content" style={{ display: "none" }}>
-                {/* Content after countdown */}
-            </div>
+            {!isFinished && (
+                <ul id="countdown">
+                    <li>
+                        <span id="day">{timeLeft.days} :</span>
+                    </li>
+                    <li>
+                        <span id="Hours">{timeLeft.hours} :</span>
+                    </li>
+                    <li>
+                        <span id="Minutes">{timeLeft.minutes} :</span>
+                    </li>
+                    <li>
+                        <span id="Seconds">{timeLeft.seconds}</span>
+                    </li>
+                </ul>
+            )}
+            <h1 id="headline">{headline}</h1>
+            {isFinished && (
+                <div id="content">
+                    <p>Thanks for celebrating with us!</p>
+                </div>
+            )}
         </div>
     );
 };

@@ -7,7 +7,7 @@ import Bg from '../../img/testimonial/testimonial-bg-2.jpg'
 const TestimonialSectionS3 = () => {
 
     useEffect(() => {
-        const testimonialSlider3 = new Swiper(".testimonial-slider-3", {
+        new Swiper(".testimonial-slider-3", {
             spaceBetween: 30,
             speed: 2000,
             loop: true,

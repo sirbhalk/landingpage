@@ -20,7 +20,7 @@ const BlogList = (props) => {
                             {blogs.slice(0,3).map((blog, bitem) => (
                                 <div className="news-standard-items" key={bitem}>
                                     <div className="news-thumb">
-                                        <img src={blog.screens} alt="img" />
+                                        <img src={blog.screens} alt={blog.title} />
                                         <div className="post-cat">
                                             {blog.day} <br />
                                             Feb
@@ -45,11 +45,19 @@ const BlogList = (props) => {
 
                             <div className="page-nav-wrap mt-5 text-center">
                                 <ul>
-                                    <li><a className="page-numbers" href="#"><i className="fa-solid fa-chevrons-left"></i></a></li>
-                                    <li><a className="page-numbers" href="#">1</a></li>
-                                    <li><a className="page-numbers" href="#">2</a></li>
-                                    <li><a className="page-numbers" href="#">3</a></li>
-                                    <li><a className="page-numbers" href="#"><i className="fa-solid fa-chevrons-right"></i></a></li>
+                                    <li>
+                                        <button type="button" className="page-numbers" aria-label="Previous page">
+                                            <i className="fa-solid fa-chevrons-left" aria-hidden="true"></i>
+                                        </button>
+                                    </li>
+                                    <li><button type="button" className="page-numbers" aria-label="Page 1">1</button></li>
+                                    <li><button type="button" className="page-numbers" aria-label="Page 2">2</button></li>
+                                    <li><button type="button" className="page-numbers" aria-label="Page 3">3</button></li>
+                                    <li>
+                                        <button type="button" className="page-numbers" aria-label="Next page">
+                                            <i className="fa-solid fa-chevrons-right" aria-hidden="true"></i>
+                                        </button>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

@@ -7,7 +7,6 @@ import brush from '../../img/brush-front.png'
 import demand from '../../img/demand-shape.png'
 import homedemand from '../../img/home-demand.png'
 import custom from '../../img/custom-print-img.png'
-import lineab from '../../img/line-2.png'
 import lineab1 from '../../img/icon/09.svg'
 import lineab2 from '../../img/icon/10.svg'
 import lineab3 from '../../img/icon/16.svg'
@@ -19,25 +18,25 @@ const about3 = () => {
     return (
         <section className="product-demand-section fix section-padding">
             <div className="line-shape">
-                <img src={lineshape} alt="img" />
+                <img src={lineshape} alt="Decorative line shape" />
             </div>
             <div className="container">
                 <div className="product-demand-wrapper">
                     <div className="row g-4">
                         <div className="col-xl-5 col-lg-6">
                             <div className="product-demand-image">
-                                <img src={custom} alt="img" className="border-radius-22 wow img-custom-anim-top" />
+                                <img src={custom} alt="Custom printable product" className="border-radius-22 wow img-custom-anim-top" />
                                 <div className="ratting-shape">
-                                    <img src={ratting} alt="img" />
+                                    <img src={ratting} alt="Customer rating graphic" />
                                 </div>
                                 <div className="brush-shape">
-                                    <img src={brush} alt="img" />
+                                    <img src={brush} alt="Brush stroke accent" />
                                 </div>
                                 <div className="demand-shape float-bob-y">
-                                    <img src={demand} alt="img" />
+                                    <img src={demand} alt="Demand highlight shape" />
                                 </div>
                                 <div className="home-demand-shape float-bob-x">
-                                    <img src={homedemand} alt="img" />
+                                    <img src={homedemand} alt="Home demand shape" />
                                 </div>
                             </div>
                         </div>
@@ -54,7 +53,7 @@ const about3 = () => {
                                 <div className="icon-wrapper d-flex flex-nowrap gap-4">
                                     <div className="icon-items wow fadeInUp" data-wow-delay=".3s">
                                         <div className="icon">
-                                            <img src={lineab1} alt="img" />
+                                            <img src={lineab1} alt="Custom design icon" />
                                         </div>
                                         <h4>
                                             Custom design
@@ -62,7 +61,7 @@ const about3 = () => {
                                     </div>
                                     <div className="icon-items wow fadeInUp" data-wow-delay=".5s">
                                         <div className="icon">
-                                            <img src={lineab2} alt="img" />
+                                            <img src={lineab2} alt="Realistic textures icon" />
                                         </div>
                                         <h4>
                                             Realistic Textures
@@ -71,7 +70,7 @@ const about3 = () => {
                                     </div>
                                     <div className="icon-items wow fadeInUp" data-wow-delay=".3s">
                                         <div className="icon">
-                                            <img src={lineab1} alt="img" />
+                                            <img src={lineab1} alt="Dynamic animations icon" />
                                         </div>
                                         <h4>
                                             Dynamic Animations
@@ -80,7 +79,7 @@ const about3 = () => {
                                     </div>
                                     <div className="icon-items wow fadeInUp" data-wow-delay=".5s">
                                         <div className="icon">
-                                            <img src={lineab2} alt="img" />
+                                            <img src={lineab2} alt="High-quality exports icon" />
                                         </div>
                                         <h4>
                                             High-Quality Exports
@@ -90,11 +89,11 @@ const about3 = () => {
                                 </div>
                                 <ul className="wow fadeInUp" data-wow-delay=".3s">
                                     <li>
-                                        <img src={lineab3} alt="img" />
+                                        <img src={lineab3} alt="Checklist icon" />
                                         Printing programs tailored to your company needs
                                     </li>
                                     <li>
-                                        <img src={lineab3} alt="img" />
+                                        <img src={lineab3} alt="Checklist icon" />
                                         Large paper & stock selection & Unique Print
                                     </li>
                                 </ul>

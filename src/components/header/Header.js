@@ -15,10 +15,6 @@ import MobileMenu from '../MobileMenu/MobileMenu';
 const Header = (props) => {
 
 
-    const SubmitHandler = (e) => {
-        e.preventDefault()
-    }
-
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
@@ -54,7 +50,7 @@ const Header = (props) => {
                             <div className="header-left">
                                 <div className="logo">
                                     <Link onClick={ClickHandler} to="/" className="header-logo">
-                                        <img src={Logo} alt="logo-img" />
+                                        <img src={Logo} alt="3DMock logo" />
                                     </Link>
                                 </div>
                             </div>
@@ -71,7 +67,7 @@ const Header = (props) => {
                                                         <div className="homemenu-items">
                                                             <div className="homemenu">
                                                                 <div className="homemenu-thumb">
-                                                                    <img src={Home1} alt="img" />
+                                                                    <img src={Home1} alt="Home layout one preview" />
                                                                     <div className="demo-button">
                                                                         <Link onClick={ClickHandler} to="/home" className="theme-btn">
                                                                             Demo Page
@@ -86,7 +82,7 @@ const Header = (props) => {
                                                             </div>
                                                             <div className="homemenu">
                                                                 <div className="homemenu-thumb mb-15">
-                                                                    <img src={Home2} alt="img" />
+                                                                    <img src={Home2} alt="Home layout two preview" />
                                                                     <div className="demo-button">
                                                                         <Link onClick={ClickHandler} to="/home-2" className="theme-btn">
                                                                             Demo Page
@@ -101,7 +97,7 @@ const Header = (props) => {
                                                             </div>
                                                             <div className="homemenu">
                                                                 <div className="homemenu-thumb mb-15">
-                                                                    <img src={Home3} alt="img" />
+                                                                    <img src={Home3} alt="Home layout three preview" />
                                                                     <div className="demo-button">
                                                                         <Link onClick={ClickHandler} to="/home-3" className="theme-btn">
                                                                             Demo Page
@@ -132,7 +128,7 @@ const Header = (props) => {
                                                 <Link onClick={ClickHandler} to="/about">About Us</Link>
                                             </li>
                                             <li>
-                                                <Link onClick={ClickHandler} to="#">
+                                                <Link onClick={ClickHandler} to="/service">
                                                     Services
                                                 </Link>
                                                 <ul className="submenu">
@@ -141,7 +137,7 @@ const Header = (props) => {
                                                 </ul>
                                             </li>
                                             <li className="has-dropdown">
-                                                <Link onClick={ClickHandler} to="#">
+                                                <Link onClick={ClickHandler} to="/project">
                                                     Pages
                                                 </Link>
                                                 <ul className="submenu">
@@ -151,7 +147,7 @@ const Header = (props) => {
                                                 </ul>
                                             </li>
                                             <li>
-                                                <Link onClick={ClickHandler} to="#">
+                                                <Link onClick={ClickHandler} to="/shop">
                                                     Shop
                                                 </Link>
                                                 <ul className="submenu">
@@ -162,7 +158,7 @@ const Header = (props) => {
                                                 </ul>
                                             </li>
                                             <li>
-                                                <Link onClick={ClickHandler} to="#">
+                                                <Link onClick={ClickHandler} to="/news">
                                                     Blog
                                                 </Link>
                                                 <ul className="submenu">

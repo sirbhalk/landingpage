@@ -14,7 +14,7 @@ const ProductSectionS3 = ({ products }) => {
     }
 
     useEffect(() => {
-        const shopSlider = new Swiper('.shop-slider', {
+        new Swiper('.shop-slider', {
             spaceBetween: 30,
             speed: 2000,
             loop: true,
@@ -52,10 +52,10 @@ const ProductSectionS3 = ({ products }) => {
     return (
         <section className="shop-section bg-cover section-padding" style={{ backgroundImage: `url(${PBg})` }}>
             <div className="shape-image">
-                <img src={Shap1} alt="img" />
+                <img src={Shap1} alt="Decorative product shape 1" />
             </div>
             <div className="shape-image-2">
-                <img src={Shap2} alt="img" />
+                <img src={Shap2} alt="Decorative product shape 2" />
             </div>
             <div className="array-button justify-content-center">
                 <button className="array-prev"><i className="fa-regular fa-arrow-left-long"></i></button>
@@ -76,7 +76,7 @@ const ProductSectionS3 = ({ products }) => {
                                 <div className="swiper-slide" key={index}>
                                     <div className="shop-box-items">
                                         <div className="shop-image">
-                                            <img src={product.proImg} alt="img" />
+                                            <img src={product.proImg} alt={product.title || 'Product image'} />
                                         </div>
                                         <div className="shop-content">
                                             <h3>

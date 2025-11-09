@@ -22,7 +22,7 @@ const ProductSectionS4 = ({ products, addToCartProduct }) => {
 
         <section className="feature-product-section-3 fix section-padding">
             <div className="right-shape">
-                <img src={ProdactShape} alt="img" />
+                <img src={ProdactShape} alt="Featured products decorative stickers" />
             </div>
             <div className="container">
                 <div className="section-title-area">
@@ -63,7 +63,7 @@ const ProductSectionS4 = ({ products, addToCartProduct }) => {
                                     <div className="col-xl-3 col-lg-4 col-md-6" key={pitem}>
                                         <div className="feature-product-items-2">
                                             <div className="product-image">
-                                                <img src={product.proImg} alt="img" />
+                                                <img src={product.proImg} alt={product.title || 'Featured product'} />
                                                 <ul className="product-icon d-grid align-items-center">
                                                     <li>
                                                         <button onClick={() => addToCartProduct(product)}>
@@ -71,9 +71,9 @@ const ProductSectionS4 = ({ products, addToCartProduct }) => {
                                                         </button>
                                                     </li>
                                                     <li>
-                                                        <a href="#">
-                                                            <i className="fa-regular fa-star"></i>
-                                                        </a>
+                                                        <button type="button" aria-label="Add to favorites">
+                                                            <i className="fa-regular fa-star" aria-hidden="true"></i>
+                                                        </button>
                                                     </li>
                                                     <li>
                                                         <Link onClick={ClickHandler} to={`/shop-details/${product.slug}`}>
@@ -110,7 +110,7 @@ const ProductSectionS4 = ({ products, addToCartProduct }) => {
                                     <div className="col-xl-3 col-lg-4 col-md-6" key={pitem}>
                                         <div className="feature-product-items-2">
                                             <div className="product-image">
-                                                <img src={product.proImg} alt="img" />
+                                                <img src={product.proImg} alt={product.title || 'Featured product'} />
                                                 <ul className="product-icon d-grid align-items-center">
                                                     <li>
                                                         <button onClick={() => addToCartProduct(product)}>
@@ -118,9 +118,9 @@ const ProductSectionS4 = ({ products, addToCartProduct }) => {
                                                         </button>
                                                     </li>
                                                     <li>
-                                                        <a href="#">
-                                                            <i className="fa-regular fa-star"></i>
-                                                        </a>
+                                                        <button type="button" aria-label="Add to favorites">
+                                                            <i className="fa-regular fa-star" aria-hidden="true"></i>
+                                                        </button>
                                                     </li>
                                                     <li>
                                                         <Link onClick={ClickHandler} to={`/shop-details/${product.slug}`}>
@@ -157,7 +157,7 @@ const ProductSectionS4 = ({ products, addToCartProduct }) => {
                                     <div className="col-xl-3 col-lg-4 col-md-6" key={pitem}>
                                         <div className="feature-product-items-2">
                                             <div className="product-image">
-                                                <img src={product.proImg} alt="img" />
+                                                <img src={product.proImg} alt={product.title || 'Featured product'} />
                                                 <ul className="product-icon d-grid align-items-center">
                                                     <li>
                                                         <button onClick={() => addToCartProduct(product)}>
@@ -165,9 +165,9 @@ const ProductSectionS4 = ({ products, addToCartProduct }) => {
                                                         </button>
                                                     </li>
                                                     <li>
-                                                        <a href="#">
-                                                            <i className="fa-regular fa-star"></i>
-                                                        </a>
+                                                        <button type="button" aria-label="Add to favorites">
+                                                            <i className="fa-regular fa-star" aria-hidden="true"></i>
+                                                        </button>
                                                     </li>
                                                     <li>
                                                         <Link onClick={ClickHandler} to={`/shop-details/${product.slug}`}>
@@ -204,7 +204,7 @@ const ProductSectionS4 = ({ products, addToCartProduct }) => {
                                     <div className="col-xl-3 col-lg-4 col-md-6" key={pitem}>
                                         <div className="feature-product-items-2">
                                             <div className="product-image">
-                                                <img src={product.proImg} alt="img" />
+                                                <img src={product.proImg} alt={product.title || 'Featured product'} />
                                                 <ul className="product-icon d-grid align-items-center">
                                                     <li>
                                                         <button onClick={() => addToCartProduct(product)}>
@@ -212,9 +212,9 @@ const ProductSectionS4 = ({ products, addToCartProduct }) => {
                                                         </button>
                                                     </li>
                                                     <li>
-                                                        <a href="#">
-                                                            <i className="fa-regular fa-star"></i>
-                                                        </a>
+                                                        <button type="button" aria-label="Add to favorites">
+                                                            <i className="fa-regular fa-star" aria-hidden="true"></i>
+                                                        </button>
                                                     </li>
                                                     <li>
                                                         <Link onClick={ClickHandler} to={`/shop-details/${product.slug}`}>

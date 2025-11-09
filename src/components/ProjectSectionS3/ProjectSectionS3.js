@@ -10,7 +10,7 @@ const ProjectSectionS3 = () => {
     };
 
     useEffect(() => {
-        const projectSlider = new Swiper(".project-slider", {
+        new Swiper(".project-slider", {
             spaceBetween: 0,
             speed: 2000,
             loop: true,
@@ -55,7 +55,7 @@ const ProjectSectionS3 = () => {
                         {Project.slice(12,16).map((project, item) => (
                             <div className="swiper-slide" key={item}>
                                 <div className="project-thumb">
-                                    <img src={project.pimg1} alt="img" />
+                                    <img src={project.pimg1} alt={project.title || 'Project preview'} />
                                     <div className="project-button">
                                         <Link onClick={ClickHandler} to={`/project-details/${project.slug}`} className="btns">
                                             View More

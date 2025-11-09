@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Services from "../../api/Services";
-
 import Bgimg from '../../img/footer/footer-bg-2.jpg'
 import Shape1 from '../../img/footer/line-shape.png'
 import Shape2 from '../../img/footer/star.png'
 import Shape3 from '../../img/mail.png'
-import Logo from '../../img/logo/white-logo.svg'
 
 
 const ClickHandler = () => {
@@ -17,16 +14,16 @@ const FooterS3 = () => {
     return (
         <footer className="footer-section style-2 bg-cover" style={{ backgroundImage: `url(${Bgimg})` }}>
             <div className="line-shape float-bob-y">
-                <img src={Shape1} alt="img" />
+                <img src={Shape1} alt="Footer decorative line" />
             </div>
             <div className="star-shape float-bob-y">
-                <img src={Shape2} alt="img" />
+                <img src={Shape2} alt="Footer decorative star" />
             </div>
             <div className="container">
                 <div className="footer-newsletter-wrapper style-2">
                     <div className="newsletter-items wow fadeInUp" data-wow-delay=".3s">
                         <div className="icon">
-                            <img src={Shape3} alt="img" />
+                            <img src={Shape3} alt="Newsletter mail icon" />
                         </div>
                         <h2>
                             Get Our Latest's News <br />

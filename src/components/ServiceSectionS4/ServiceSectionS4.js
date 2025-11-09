@@ -15,7 +15,7 @@ const ClickHandler = () => {
 
 const ServiceSectionS4 = (props) => {
     useEffect(() => {
-        const serviceSlider3 = new Swiper(".service-slider-3", {
+        new Swiper(".service-slider-3", {
             spaceBetween: 30,
             speed: 2000,
             loop: true,
@@ -59,7 +59,7 @@ const ServiceSectionS4 = (props) => {
                         <h6 className="wow fadeInUp">More service us</h6>
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
                             Create Stunning Print For<br />
-                            <span> Your Business <img src={Shape2} alt="img" /></span>
+                            <span> Your Business <img src={Shape2} alt="Highlighted underline graphic" /></span>
                         </h2>
                     </div>
                     <Link onClick={ClickHandler} to="/service" className="theme-btn" >See all Services</Link>
@@ -73,9 +73,9 @@ const ServiceSectionS4 = (props) => {
 
                                 <div className="service-box-items-3">
                                     <div className="service-thumb">
-                                        <img src={service.sImg} alt="img" />
+                                        <img src={service.sImg} alt={service.title} />
                                         <div className="icon">
-                                            <img src={Shape3} alt="img" />
+                                            <img src={Shape3} alt="Service icon" />
                                         </div>
                                         <div className="service-content">
                                             <h4>01</h4>

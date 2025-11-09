@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ProdactShape from '../../img/product/shape-1.png'
-import { Link } from 'react-router-dom';
 import { navigationHelpers } from '../../config/appConfig';
 
 const ProductSection = ({ products, addToCartProduct }) => {
-
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
-    }
 
     const [activeTab, setActiveTab] = useState('Tab2');
     const openTab = (TabName) => {
@@ -40,7 +35,7 @@ const ProductSection = ({ products, addToCartProduct }) => {
     return (
         <section className="product-section section-padding ">
             <div className="shape-image">
-                <img src={ProdactShape} alt="img" />
+                <img src={ProdactShape} alt="Decorative product section shape" />
             </div>
             <div className="container">
                 <div className="section-title text-center">
@@ -122,12 +117,12 @@ const ProductSection = ({ products, addToCartProduct }) => {
                                     <div className="col-xl-4 col-lg-4 col-md-4" key={pitem}>
                                         <div className="product-box-items">
                                             <div className="product-image">
-                                                <img src={product.proImg} alt="img" />
-                                                {/* <img src={'https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/SCR-20251016-nkqh.jpeg.jpg'} alt="img" /> */}
+                                                <img src={product.proImg} alt={product.title || 'Product preview'} />
+                                                {/* <img src={'https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/SCR-20251016-nkqh.jpeg.jpg'} alt="Product preview" /> */}
                                                 <ul className="product-icon d-grid align-items-center">
                                                     <li>
                                                         <button
-                                                            onClick={() => addToCartProduct(product)}><i class="fa-thin fa-circle-info"></i></button>
+                                                            onClick={() => addToCartProduct(product)}><i className="fa-thin fa-circle-info"></i></button>
                                                     </li>
                                                     {/* <li>
                                                         <a href="#">

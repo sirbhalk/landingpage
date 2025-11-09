@@ -1,27 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
-import { connect } from "react-redux";
-import { removeFromCart } from "../../store/actions/action";
-import HeaderTopbarS3 from '../HeaderTopbarS3/HeaderTopbarS3';
-import Logo from '../../img/logo/black-logo.svg';
-import Home1 from '../../img/header/home-1.jpg';
-import Home2 from '../../img/header/home-2.jpg';
-import Home3 from '../../img/header/home-3.jpg';
 import MobileMenu from '../MobileMenu/MobileMenu';
 
 
 const HeaderS3 = (props) => {
 
-    const SubmitHandler = (e) => {
-        e.preventDefault()
-    }
-
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
-
-    const { carts } = props;
-
 
     const [isSticky, setIsSticky] = useState(false);
 
@@ -51,7 +37,7 @@ const HeaderS3 = (props) => {
                             <div className="header-left">
                                 <div className="logo">
                                     <Link onClick={ClickHandler} to="/" className="header-logo">
-                                        <img src={'https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/logo.png'} alt="logo-img" style={{height:'40px'}}/>
+                                        <img src={'https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/logo.png'} alt="3DMock logo" style={{height:'40px'}}/>
                                     </Link>
                                 </div>
                             </div>
@@ -201,14 +187,7 @@ const HeaderS3 = (props) => {
         </header>
     )
 }
-const mapStateToProps = (state) => {
-    return {
-        carts: state.cartList.cart,
-    };
-};
-
-
-export default connect(mapStateToProps, { removeFromCart })(HeaderS3);
+export default HeaderS3;
 
 
 

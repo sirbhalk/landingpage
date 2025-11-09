@@ -14,7 +14,7 @@ const ClickHandler = () => {
 
 const ServiceSection = (props) => {
     useEffect(() => {
-        const serviceSlider = new Swiper('.service-slider', {
+        new Swiper('.service-slider', {
             spaceBetween: 30,
             speed: 2000,
             loop: true,
@@ -57,7 +57,7 @@ const ServiceSection = (props) => {
     return (
         <section className={"" + props.hclass} style={{ backgroundImage: `url(${props.Bg})` }}>
             <div className="shape-image">
-                <img src={Shape} alt="img" />
+                <img src={Shape} alt="Service section decorative shape" />
             </div>
             <div className="container">
                 <div className="section-title-area">
@@ -65,7 +65,7 @@ const ServiceSection = (props) => {
                         <h6 className="wow fadeInUp">More service us</h6>
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
                             Create Stunning Print for<br />
-                            <span> Your Business <img src={Shape2} alt="img" /></span>
+                            <span> Your Business <img src={Shape2} alt="Highlighted underline shape" /></span>
                         </h2>
                     </div>
                     <Link onClick={ClickHandler} to="/service" className="theme-btn wow fadeInUp" data-wow-delay=".5s">See all Services</Link>
@@ -82,7 +82,7 @@ const ServiceSection = (props) => {
                                         <p>{service.description}</p>
                                     </div>
                                     <div className="service-image">
-                                        <img src={service.sImg} alt="img" />
+                                        <img src={service.sImg} alt={service.title} />
                                     </div>
                                     <div className="service-btn">
                                         <Link onClick={ClickHandler} to={`/service-details/${service.slug}`} className="link-btn">Read Out More <i className="fa-solid fa-arrow-right"></i></Link>

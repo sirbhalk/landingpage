@@ -13,7 +13,7 @@ import logo7 from '../../img/brand/brand-logo-17.png'
 const BrandSectionS2 = () => {
 
     useEffect(() => {
-        const brandSlider3 = new Swiper(".brand-slider-3", {
+        new Swiper(".brand-slider-3", {
             spaceBetween: 30,
             speed: 2000,
             loop: true,
@@ -56,42 +56,42 @@ const BrandSectionS2 = () => {
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
                             <div className="brand-image">
-                                <img src={logo1} alt="img" />
+                                <img src={logo1} alt="Brand logo 1" />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="brand-image">
-                                <img src={logo1} alt="img" />
+                                <img src={logo1} alt="Brand logo 2" />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="brand-image">
-                                <img src={logo2} alt="img" />
+                                <img src={logo2} alt="Brand logo 3" />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="brand-image">
-                                <img src={logo3} alt="img" />
+                                <img src={logo3} alt="Brand logo 4" />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="brand-image">
-                                <img src={logo4} alt="img" />
+                                <img src={logo4} alt="Brand logo 5" />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="brand-image">
-                                <img src={logo5} alt="img" />
+                                <img src={logo5} alt="Brand logo 6" />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="brand-image">
-                                <img src={logo6} alt="img" />
+                                <img src={logo6} alt="Brand logo 7" />
                             </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="brand-image">
-                                <img src={logo7} alt="img" />
+                                <img src={logo7} alt="Brand logo 8" />
                             </div>
                         </div>
                     </div>

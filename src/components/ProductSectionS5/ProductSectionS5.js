@@ -12,7 +12,7 @@ const ProductSectionS5 = ({ products }) => {
     }
 
     useEffect(() => {
-        const shopSlider = new Swiper('.shop-slider', {
+        new Swiper('.shop-slider', {
             spaceBetween: 30,
             speed: 2000,
             loop: true,
@@ -69,7 +69,7 @@ const ProductSectionS5 = ({ products }) => {
                                     <div className="swiper-slide" key={index}>
                                         <div className="shop-box-items style-2">
                                             <div className="shop-image-2">
-                                                <img src={product.proImg} alt="img" />
+                                                <img src={product.proImg} alt={product.title || 'Popular product'} />
                                             </div>
                                             <div className="shop-content">
                                                 <h3> <Link onClick={ClickHandler} to={`/shop-details/${product.slug}`}>

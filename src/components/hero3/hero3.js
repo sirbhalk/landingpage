@@ -5,7 +5,6 @@ import 'swiper/swiper-bundle.min.css';
 
 import Herobg from '../../img/hero/hero-bg-2.jpg';
 import Line from '../../img/hero/line.png';
-import Bar from '../../img/hero/bar.png';
 import Tshirt from '../../img/hero/t-shirt.png';
 import Tshirt1 from '../../img/hero/t-shirt-2.png';
 import Tshirt2 from '../../img/hero/t-shirt-3.png';
@@ -17,7 +16,7 @@ import Mockup2 from '../../img/hero/cap.png';
 const Hero3 = () => {
 
     useEffect(() => {
-        const sliderswiper = new Swiper('.hero-slider-2', {
+        new Swiper('.hero-slider-2', {
             speed: 1500,
             loop: true,
             slidesPerView: 1,

@@ -13,7 +13,7 @@ const ClickHandler = () => {
 const ServiceSectionS3 = () => {
 
 useEffect(() =>{
-    const serviceSlider2 = new Swiper(".service-slider-2", {
+    new Swiper(".service-slider-2", {
         spaceBetween: 30,
         speed: 2000,
         loop: true,
@@ -48,7 +48,7 @@ useEffect(() =>{
     return (
         <section className="service-section-2 bg-cover fix section-padding" style={{ backgroundImage: `url(${Sbg})` }}>
             <div className="left-bg">
-                <img src={Sr1} alt="img" />
+                <img src={Sr1} alt="Service section decorative left graphic" />
             </div>
             <div className="container">
                 <div className="section-title text-center">
@@ -65,7 +65,7 @@ useEffect(() =>{
                                 <div className="service-box-items">
                                     <h3><Link onClick={ClickHandler} to={`/service-details/${service.slug}`}>Printing Service</Link></h3>
                                     <div className="service-image">
-                                        <img src={service.sImg} alt="img" />
+                                        <img src={service.sImg} alt={service.title} />
                                     </div>
                                     <div className="service-content">
                                         <p>

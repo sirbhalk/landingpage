@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Pimg1 from '../../img/portfolio/cap.png'
@@ -30,13 +30,13 @@ const PortfolioSection = () => {
         <section className="portfolio-section section-padding pt-0">
             <div className="portfolio-wrapper">
                 <div className="cap-shape float-bob-x">
-                    <img src={Pimg1} alt="img" />
+                    <img src={Pimg1} alt="Portfolio decorative cap shape" />
                 </div>
                 <div className="shape-2 float-bob-y">
-                    <img src={Pimg2} alt="img" />
+                    <img src={Pimg2} alt="Portfolio decorative shape 2" />
                 </div>
                 <div className="shape-3">
-                    <img src={Pimg3} alt="img" />
+                    <img src={Pimg3} alt="Portfolio decorative shape 3" />
                 </div>
                 <div className="container">
                     <div className="row align-items-center">
@@ -79,7 +79,7 @@ const PortfolioSection = () => {
                                             onMouseLeave={handleMouseLeave}
                                         >
                                             <div className="portfolio-image">
-                                                <img src={portfoli.pimg1} alt="img" />
+                                                <img src={portfoli.pimg1} alt={portfoli.title} />
                                                 <Link onClick={ClickHandler} to={`/project-details/${portfoli.slug}`} className="icon">
                                                     <i className="fa-solid fa-arrow-right"></i>
                                                 </Link>
