@@ -71,7 +71,7 @@ const ProductSection = ({ products, addToCartProduct }) => {
                         </li>
                     </ul>
                 </div> */}
-                <div className="tab-content">
+                <div className=" tab-content">
                     {/* <div id="Tab1" style={{ display: activeTab === 'Tab1' ? 'block' : 'none' }} >
                         <div className="row">
                             {products.length > 0 &&
