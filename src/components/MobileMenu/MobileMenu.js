@@ -2,31 +2,15 @@ import React, { Fragment, useState } from 'react';
 import List from "@mui/material/List";
 import ListItem from "@mui/material/List";
 import Collapse from "@mui/material/Collapse";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import './style.css';
+import { useAuth } from '../../context/AuthContext';
 
-const menus = [
+const baseMenus = [
     {
         id: 1,
         title: '3D Model Configurator ',
         link: '#',
-        // submenu: [
-        //     {
-        //         id: 11,
-        //         title: 'Home 01',
-        //         link: '/home'
-        //     },
-        //     {
-        //         id: 12,
-        //         title: 'Home 02',
-        //         link: '/home-2'
-        //     },
-        //     {
-        //         id: 13,
-        //         title: 'Home 03',
-        //         link: '/home-3'
-        //     }
-        // ]
     },
     {
         id: 2,
@@ -37,124 +21,36 @@ const menus = [
         id: 3,
         title: 'Pricing ',
         link: '#',
-        // submenu: [
-        //     {
-        //         id: 31,
-        //         title: 'Services',
-        //         link: '/service',
-        //     },
-        //     {
-        //         id: 32,
-        //         title: 'Service Details',
-        //         link: '/service-details/Sticker-printing'
-        //     }
-        // ]
     },
     {
         id: 4,
         title: 'Become an affiliate',
         link: '#',
-        // submenu: [
-        //     {
-        //         id: 41,
-        //         title: 'Services',
-        //         link: '/service',
-        //     },
-        //     {
-        //         id: 42,
-        //         title: 'Service Details',
-        //         link: '/service-details/Sticker-printing'
-        //     }
-        // ]
     },
-    // {
-    //     id: 5,
-    //     title: 'Pages',
-    //     link: '#',
-    //     submenu: [
-    //         {
-    //             id: 51,
-    //             title: 'Projects',
-    //             link: '/project',
-    //         },
-    //         {
-    //             id: 52,
-    //             title: 'Project Details',
-    //             link: '/project-details/3d-Genareted-Cate'
-    //         },
-    //         {
-    //             id: 53,
-    //             title: '404 Page',
-    //             link: '/404'
-    //         }
-    //     ]
-    // },
-
-    // {
-    //     id: 6,
-    //     title: 'Shop',
-    //     link: '#',
-    //     submenu: [
-    //         {
-    //             id: 61,
-    //             title: 'Shop Page',
-    //             link: '/shop',
-    //         },
-    //         {
-    //             id: 62,
-    //             title: 'Shop Details',
-    //             link: '/shop-details/Calendar-printing-design'
-    //         },
-    //         {
-    //             id: 63,
-    //             title: 'Shop Cart',
-    //             link: '/shop-cart'
-    //         },
-    //         {
-    //             id: 64,
-    //             title: 'Checkout',
-    //             link: '/checkout'
-    //         }
-    //     ]
-    // },
-
-    // {
-    //     id: 7,
-    //     title: 'Blog',
-    //     link: '#',
-    //     submenu: [
-    //         {
-    //             id: 71,
-    //             title: 'Blog',
-    //             link: '/news',
-    //         },
-    //         {
-    //             id: 72,
-    //             title: 'Blog Details',
-    //             link: '/blog-single/How-To-Teach-Kids-Ramadan-Isn’t-About-Food',
-    //         },
-           
-    //     ]
-    // },
-  
-    {
-        id: 88,
-        title: 'Login / Sign Up',
-        link: '/contact',
-    }
-
-
-]
-
+];
 
 const MobileMenu = () => {
 
     const [openId, setOpenId] = useState(0);
     const [menuActive, setMenuState] = useState(false);
+    const { user, logout } = useAuth();
+    const navigate = useNavigate();
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
-    }
+    };
+
+    const handleAuthAction = async () => {
+        setMenuState(false);
+        if (user) {
+            await logout();
+            navigate('/');
+        } else {
+            window.location.href = 'https://3d-mock-app.vercel.app/login';
+        }
+    };
+
+    const username = user?.name || user?.email;
 
     return (
         <div>
@@ -164,7 +60,7 @@ const MobileMenu = () => {
                 </div>
 
                 <ul className="responsivemenu">
-                    {menus.map((item, mn) => {
+                    {baseMenus.map((item, mn) => {
                         return (
                             <ListItem className={item.id === openId ? 'active' : null} key={mn}>
                                 {item.submenu ?
@@ -181,7 +77,7 @@ const MobileMenu = () => {
                                                                 <NavLink onClick={ClickHandler} className="active"
                                                                     to={submenu.link}>{submenu.title}</NavLink>
                                                             </ListItem>
-                                                        )
+                                                        );
                                                     })}
                                                 </Fragment>
                                             </List>
@@ -191,9 +87,19 @@ const MobileMenu = () => {
                                         to={item.link}>{item.title}</NavLink>
                                 }
                             </ListItem>
-                        )
+                        );
                     })}
                 </ul>
+
+                <div className="mobile-auth-action" style={{ padding: '0 24px 24px' }}>
+                    <button
+                        type="button"
+                        className="theme-btn w-100"
+                        onClick={handleAuthAction}
+                    >
+                        {user ? `Logout (${username})` : 'Login / Sign Up'}
+                    </button>
+                </div>
 
             </div>
 
@@ -205,7 +111,7 @@ const MobileMenu = () => {
                 </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default MobileMenu;

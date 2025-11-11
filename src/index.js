@@ -9,14 +9,16 @@ import './scss/main.css';
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./store/index";
 import { Provider } from "react-redux";
+import { AuthProvider } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
             <ParallaxProvider>
-                <App />
-                
+                <AuthProvider>
+                    <App />
+                </AuthProvider>
             </ParallaxProvider>
         </PersistGate>
     </Provider>

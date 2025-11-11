@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import NavbarS3 from '../../components/NavbarS3/NavbarS3'
+import NavbarS3 from '../../components/NavbarS3/NavbarS3';
 import ProductSection from '../../components/ProductSection/ProductSection';
 import ProcessSection from '../../components/ProcessSection/ProcessSection';
 import PricingSection from '../../components/PricingSection/PricingSection';
@@ -13,6 +13,7 @@ import TestimonialSectionS2 from '../../components/TestimonialSectionS2/Testimon
 import FaqSection from '../../components/FaqSection/FaqSection';
 import CtaSectionS2 from '../../components/CtaSectionS2/CtaSectionS2';
 import FooterS3 from '../../components/footerS3/FooterS3';
+import ProfileSummary from '../../components/ProfileSummary/ProfileSummary';
 
 
 const HomePage = ({ addToCart }) => {
@@ -29,6 +30,7 @@ const HomePage = ({ addToCart }) => {
         <Fragment>
             {/* <Navbar hclass={'header-section'} /> */}
             <NavbarS3 hclass={'header-section'} />
+            <ProfileSummary />
             {/* <Hero /> */}
             <Hero3 />
             
