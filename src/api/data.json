@@ -12,7 +12,7 @@
   {
     "id": 2,
     "proImg": "https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/hoodie%20(2).png",
-    "title": "hoodie",
+    "title": "hoodie-model",
     "slug": "Pattern-Pillow",
     "price": "65.00",
     "delPrice": "85.00",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "proImg": "https://pub-899e12361f7c46aa85cc1abaf674bd3a.r2.dev/tshirt2.png",
-    "title": "tshirt",
+    "title": "tshirt-model",
     "slug": "Glossy-button-pins",
     "price": "285.00",
     "delPrice": "300.00",

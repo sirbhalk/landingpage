@@ -34,8 +34,11 @@ export const AuthProvider = ({ children }) => {
       const data = await request('/auth/profile');
       setUser(data.user);
     } catch (err) {
-      console.error('Auth check failed:', err);
-      setUser(null);
+      if (err.status === 401) {
+        setUser(null);
+      } else {
+        console.error('Auth check failed:', err);
+      }
     } finally {
       setLoading(false);
     }
