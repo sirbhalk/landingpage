@@ -20,6 +20,7 @@ import Refund from '../Refund/Refund';
 import Termsconditions from '../termsconditions/termsconditions';
 import ErrorPage from '../ErrorPage/ErrorPage';
 import LoginPage from '../Auth/LoginPage';
+import AffiliateProgramPage from '../AffiliateProgramPage/AffiliateProgramPage';
 
 
 const AllRoute = () => {
@@ -48,6 +49,7 @@ const AllRoute = () => {
           <Route path='refund' element={<Refund />} />
           <Route path='terms-conditions' element={<Termsconditions />} />
           <Route path='login' element={<LoginPage />} />
+          <Route path='pages/affiliate-program' element={<AffiliateProgramPage />} />
           <Route path='configurator' element={<Navigate to="http://localhost:3000" replace />} />
           <Route path='404' element={<ErrorPage />} />
         </Routes>

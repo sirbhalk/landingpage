@@ -84,9 +84,9 @@ const HeaderS3 = (props) => {
                                                 </Link>
                                             </li>
                                             <li className="has-dropdown">
-                                                <Link onClick={ClickHandler} to="#">
-                                                    Become an affiliate
-                                                </Link>
+                                            <Link onClick={ClickHandler} to="/pages/affiliate-program">
+                                                Become an affiliate
+                                            </Link>
                                             </li>
                                         </ul>
                                     </nav>

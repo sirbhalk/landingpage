@@ -55,7 +55,7 @@ const CtaSectionS2 = () => {
                             </h2>
                         </div>
                         <div className="cta-btn mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                            <Link onClick={ClickHandler} to="/about" className="theme-btn"> OPEN A PARTNER ACCOUNT</Link>
+                            <Link onClick={ClickHandler} to="/pages/affiliate-program" className="theme-btn"> OPEN A PARTNER ACCOUNT</Link>
                         </div>
                     </div>
                     <div className="cta-image">

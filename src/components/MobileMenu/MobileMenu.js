@@ -25,7 +25,7 @@ const baseMenus = [
     {
         id: 4,
         title: 'Become an affiliate',
-        link: '#',
+        link: '/pages/affiliate-program',
     },
 ];
 
